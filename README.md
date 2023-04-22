@@ -1,4 +1,16 @@
-# projet-poil-o-pattes-front
+# Poil-O-Pattes
+
+## Description
+
+
+link: https://poilsopattes.raffiskender.com/
+
+## Stack and tools
+* [React](https://reactjs.org/)
+* [Redux](https://redux.org/)
+* [Figma](https://www.figma.com/)
+* [SASS](https://sass.com/)
+* [Jest](https://jestjs.io/fr/)
 
 ## Install the project 
 
