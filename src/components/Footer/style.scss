@@ -1,0 +1,140 @@
+@use 'src/styles/vars';
+.footer{
+  font-family: vars.$global-font;
+ 
+  padding-top: 5%;
+
+  &-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 1rem;
+    .footer-box--contact{
+      font-size: .9rem;
+      width: 22rem;
+      height: 8rem;
+      padding: .5rem;
+      color: black;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 3.5rem;
+      margin-top: 2rem;
+    
+      p{
+        line-height: 1.3rem;
+        
+      }
+    }
+    .footer-box--map{
+      width: 22rem;
+      height: 15rem;
+      margin: 0 auto;
+      border: 1px solid grey;
+    }
+  }
+  &-social{
+    height: 4rem;
+    font-size: .9rem;
+    text-align: center;
+    
+    li{
+      display: inline-block;
+      margin-right: 1.2rem;
+      margin-top: 1rem;
+      font-size: 1.4rem;
+    }
+    p{
+      margin-right: .9rem;
+      margin-top: .8rem;
+      color: rgb(29, 122, 214);
+    }
+  }
+  &-bottom{
+    font-size: .8rem;
+    padding: .6rem;
+    text-align: center;
+    background-color: vars.$primary-color;
+  
+  }
+  .days{
+
+    // margin-top: 0.8rem;
+    align-items: left;
+    font-size: small;
+    border-radius: 9px;
+    background-color:rgb(167, 199, 231);
+ 
+    left: 0rem;
+    padding: .2rem;
+    // width: 6rem;
+    line-height:25px;
+  }
+}
+
+// media queries mobile  
+@media screen and (min-width: 300px) and (max-width: 480px)  {
+  .footer{
+    margin-top: auto;
+  }
+   
+ }
+ 
+ // media queries tablet 
+ @media screen and (min-width: 481px) and (max-width: 768px)  {
+  .footer{
+    margin-top: auto;
+    
+  }
+ 
+ }
+ 
+ // media queries small screens
+ @media screen and (min-width: 769px) and (max-width: 1024px) {
+ .footer{
+  margin-top: auto;
+  &-box{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    .footer-box--map{
+      width: 25rem;
+      height: 16rem;
+    }
+  }
+ }  
+ 
+ }
+ 
+ @media screen and (min-width: 1025px) {
+   .footer{
+    margin-top:auto;
+    
+    
+    &-box{
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 2rem;
+      margin-top: 3rem;
+      margin-left: auto;
+      margin-right: auto;
+      .footer-box--contact{
+        font-size: 1rem;
+        margin-top: 3rem;
+      }
+      .footer-box--map{
+        width: 27rem;
+        height: 18rem;
+      }
+    }
+    .days{
+      font-size: medium;
+      padding: .22rem;
+    }
+    .time{
+      margin-bottom: .3rem;
+    }
+   }
+ }

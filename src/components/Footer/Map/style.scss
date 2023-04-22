@@ -1,0 +1,33 @@
+// media queries mobile 
+@media screen and (min-width: 300px) and (max-width: 480px)  {
+  .iframe{
+    width: 22rem;
+    height: 15rem;
+  }
+   
+ }
+
+ // media queries tablet 
+ @media screen and (min-width: 481px) and (max-width: 768px)  {
+  .iframe{
+    width: 22rem;
+    height: 15rem;
+  }
+ 
+ }
+ 
+// media queries small screens
+ @media screen and (min-width: 769px) and (max-width: 1024px) {
+    .iframe{
+      width: 25rem;
+      height: 16rem;
+    } 
+}
+
+// media queries desktop 
+@media screen and (min-width: 1025px) {
+  .iframe{
+    width: 27rem;
+    height: 18rem;
+  }
+}

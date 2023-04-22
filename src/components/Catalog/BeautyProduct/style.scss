@@ -1,0 +1,161 @@
+@use 'src/styles/vars';
+.beautyproduct{
+
+  margin: 0 auto;
+  text-align: center;
+  height: 25rem;
+  font-family: vars.$global-font;
+  height: auto;
+  width: 70%;
+  border-top: 8px solid white;
+  font-size: 1.4rem;
+  font-weight: 500;
+
+
+    &-title{
+      margin: 1rem auto;
+      padding: 0.5rem;
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: 400;
+      border-bottom: 2px solid rgb(167, 199, 231);
+      width: 12rem;
+      margin-left: auto;
+      margin-right: auto;
+
+  }
+  
+    &-header {
+      display: flex;
+      justify-content: space-evenly;
+      font-size: 0.8rem;
+      font-weight:400;
+      margin: 1rem 1rem;
+    }
+  
+
+    &-link{
+      color:grey;
+      text-decoration: underline;
+    }
+
+    &-content{
+      display: flex;
+      flex-direction: column;
+ 
+      
+    }
+
+  
+    &-article{
+      width: 100%;
+      margin: 1rem auto;
+      padding: 1rem;
+      text-align: center;
+      background-color:rgb(205, 226, 247);
+      border-radius: 5px;
+      a{
+        font-size: 1rem;
+        font-weight:400;
+        text-align: center;
+      }
+      img{
+        width: 40%;
+        height: 30%;
+        position: relative;
+        margin-top: 1rem;
+        border-radius: 500px;
+         -webkit-border-radius: 500px;
+         -moz-border-radius: 500px;
+         border:2.5px solid white;  
+    }
+    img:hover, img:focus{
+      animation: img 1s;
+      box-shadow: 0 0 0 1em transparent;
+    }
+  }
+  
+  @keyframes img {
+    0% { box-shadow: 0 0 0 0 white }
+  }
+
+}
+ 
+// Media queries Tablet
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+  .beautyproduct{
+
+    &-header{
+
+      font-size: 1.2rem;
+      margin: 1rem 3rem;
+    }
+    &-title{
+      font-size: 1.7rem;
+
+    }
+     &-article{
+
+      img{
+        width: 10rem;
+      }
+      a{
+        font-size: 1.5rem;
+      }
+     }
+  
+    
+  }
+  
+}
+
+
+      // Media queries Desktop
+@media screen and (min-width: 1024px) {
+
+  .beautyproduct{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%; 
+    height: auto;
+   
+    &-title{
+
+      margin: 5rem auto;
+      font-size: 3.5rem;
+      width: 25rem;
+    }
+
+    &-header{
+      font-size: 1.5rem;
+      margin: 1rem 6rem;
+    }
+
+    &-article{
+      width: 30rem;
+      height: auto;
+      margin: 1rem;
+
+      a{
+        font-size: 2rem;
+        margin-top: 1rem; 
+        
+      }
+      img{  
+        margin-top: 3rem;
+        width: 10rem;
+
+      }
+
+  }
+
+  &-content{
+    flex-direction: column-reverse;
+  }
+
+}
+}
+  
+

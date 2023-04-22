@@ -1,0 +1,218 @@
+@use 'src/styles/vars';
+.header{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: vars.$global-font;
+  
+  background-color: vars.$primary-color;
+  z-index: 0;
+  box-sizing: content-box;
+  &-logo{
+    //width: 30px; 
+  }
+  img{
+    display : inline
+    //margin-left: 2em;
+    //margin-right: 1rem;
+  }
+
+  h1{
+    margin-left : 0rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+    left: 4.5rem;
+  }
+  a{
+    margin-left:2rem ;
+    display: flex;
+    bottom: 1rem;
+    right: .6rem;
+    font-size: .9rem;
+  }
+
+  .login-form-logged{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top:0px;
+    align-items: flex-end;
+    bottom: 1rem;
+    right: .6rem;
+    font-size: 1rem;
+    font-family: vars.$global-font;
+    p{
+      margin-bottom: 0.3em;
+      font-size: .6rem;
+      font-weight: 400;
+
+      }
+      button{
+        background-color: transparent;
+        border: none;
+        margin-top: .4rem;
+        font-size: .8rem;
+        position: relative;
+
+        left: 3.4rem;
+
+   
+
+      }
+  }
+  .login-form-button {
+   text-align: start;
+    font-weight:400;
+    text-decoration: underline;
+    font-size: .89rem;
+  }
+  .logged-button {
+    margin-right: 0.2rem;
+    font-weight:500;
+    text-decoration: underline;
+  }
+  .login-form-message{
+    font-size: .9rem;
+    padding: .1rem;
+    font-weight: 300;
+  }
+  
+}
+// min-width => greater than or equal to 300px
+// max-width => less than or equal to 480px 
+
+// media queries mobile 
+@media screen and (min-width: 300px) and (max-width: 480px)  {
+  .header{
+  height: 55px;
+    &-logo{
+      width: 30px; 
+    }
+    img{
+      margin-left: 2em;
+      margin-right: 1rem;
+    }
+    .login-form-message{
+      font-size: .9rem;
+      font-weight: 300;
+      margin-left: .6rem;
+    }
+    .login-form-button {
+      margin-right: 0.5em;
+      font-weight:400;
+      text-decoration: underline;
+      font-size: .89rem;
+    }
+    .logged-button {
+      font-weight:400;
+      text-decoration: underline;
+    }
+  }
+}
+
+// media queries tablet 
+@media screen and (min-width: 481px) and (max-width: 768px)  {
+  .header{
+    height: 65px;
+    h1{
+      margin: 0rem auto;
+      font-size: 1.5rem;
+      left: 4.5rem;
+    }
+    img{
+      margin-left: 2em;
+      margin-right: 1rem;
+    }
+    .logged-button {
+      font-weight:400;
+      text-decoration: underline;
+      margin-left: 3.7rem;
+    }
+    .login-form-logged{
+      margin-right: 1rem;
+    }
+    #logo{
+      width: 32px; 
+      margin-left: 2rem;
+    }
+    #button-connect{
+      margin-right: 1rem;
+    }
+
+  }
+}
+
+// media queries Small screens 
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .header{
+    height: 62px;
+   h1{
+      margin: 0rem auto;
+      font-size: 1.8rem;
+      font-weight: 500;
+      left: 5rem;
+    }
+    .logged-button {
+      font-weight:500;
+      text-decoration: underline;
+      margin-left: 4rem;
+    }
+    .login-form-message{
+      font-size: 1rem;
+      padding: .3rem;
+      font-weight: 300;
+      position: relative;
+      top: 1.5rem;
+    }
+    .login-form-button {
+      position: relative;
+      bottom: 1rem;
+      left: 2rem;
+      
+    }
+}
+#logo{
+  width: 33px; 
+}
+#button-connect{
+  margin-right: 1rem;
+}
+}
+
+// media queries desktop 
+@media screen and (min-width: 1025px) {
+  .header{
+    height: 61px;
+   h1{
+      //margin: 0rem auto;
+      font-size: 1.8rem;
+      font-weight: 500;
+      margin-right: auto;
+      margin-left: auto;
+    }
+    .logged-button {
+      font-weight:500;
+      text-decoration: underline;
+      margin-left: 4rem;
+    }
+    .login-form-message{
+      font-size: 1rem;
+      font-weight: 300;
+      margin-right: 1rem;
+      position: relative;
+      top: 1.5rem;
+    }
+    .login-form-button {
+      position: relative;
+      bottom: 1rem;
+      left: 1.5rem;
+      
+    }
+}
+#logo{
+  width: 33px; 
+}
+#button-connect{
+  margin-right: 1rem;
+}
+}

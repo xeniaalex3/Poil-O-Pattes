@@ -1,0 +1,194 @@
+@use 'src/styles/vars';
+.clothes{
+
+  margin: 0 auto;
+  text-align: center;
+  height: 25rem;
+  font-family: vars.$global-font;
+  height: auto;
+  width: 70%;
+  border-top: 8px solid white;
+  font-size: 1.4rem;
+  font-weight: 500;
+
+
+    &-title{
+      margin: 1rem auto;
+      padding: 0.5rem;
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: 400;
+      border-bottom: 2px solid rgb(167, 199, 231);
+      width: 12rem;
+      margin-left: auto;
+      margin-right: auto;
+
+  }
+
+  &-back{
+
+    display: flex;
+    justify-content: center;
+    margin-left: 1rem;
+    font-size: 0.9rem;
+    color: rgb(92, 168, 244) ;
+    font-weight: 500;
+    background-color:rgb(229, 242, 255);
+    width: 5rem;
+    padding: 0.3rem;
+    border-radius: 40px 20px 40px 20px;
+    border: 0.1rem solid rgb(92, 168, 244);
+    
+  }
+  
+    &-header {
+      display: flex;
+      justify-content: space-evenly;
+      font-size: 0.9rem;
+      font-weight:400;
+      margin: 1rem 1rem;
+    }
+  
+
+    &-link{
+      color:grey;
+      text-decoration: underline;
+    }
+
+    &-content{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      
+    }
+
+  
+    &-article{
+      width: 100%;
+      margin: 1rem auto;
+      padding: 1rem;
+      text-align: center;
+      background-color:rgb(205, 226, 247);
+      border-radius: 5px;
+      h2{
+        font-size: 1rem;
+        font-weight:400;
+        text-align: center;
+      }
+      img{
+        width: 40%;
+        height: 30%;
+        position: relative;
+        margin-top: 1rem;
+        border-radius: 500px;
+         -webkit-border-radius: 500px;
+         -moz-border-radius: 500px;
+         border:2.5px solid white;  
+    }
+    img:hover, img:focus{
+      animation: img 1s;
+      box-shadow: 0 0 0 1em transparent;
+    }
+  }
+  
+  @keyframes img {
+    0% { box-shadow: 0 0 0 0 white }
+  }
+
+}
+ 
+// Media queries Tablet
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+  .clothes{
+
+    &-header{
+
+      font-size: 1.2rem;
+      margin: 1rem 3rem;
+    }
+
+    &-title{
+      font-size: 1.7rem;
+
+    }
+    &-back{
+
+      margin-left: 3rem;
+      font-size: 0.9rem;
+      width: 5rem;
+
+    }
+    
+
+     &-article{
+      h2{
+        font-size: 1.5rem;
+      }
+
+      img{
+        width: 10rem;
+      }
+     }
+  
+    
+  }
+  
+}
+
+
+      // Media queries Desktop
+@media screen and (min-width: 1024px) {
+
+  .clothes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%; 
+    height: auto;
+   
+    &-title{
+
+      margin: 5rem auto;
+      font-size: 3.5rem;
+      width: 25rem;
+    }
+
+    &-back{
+
+      margin-left: 7rem;
+      margin-bottom: 2rem;
+      font-size: 1.2rem;
+      width: 8rem;
+      
+    }
+
+    &-header{
+      font-size: 1.5rem;
+      margin: 1rem 6rem;
+    }
+
+    &-article{
+      width: 30rem;
+      margin: 1rem;
+      height: auto;
+
+      h2{
+        font-size: 2rem;
+        margin-top: 1rem; 
+        
+      }
+      img{  
+        margin-top: 3rem;
+        width: 10rem;
+
+      }
+
+  }
+
+  &-content{
+    flex-direction: column-reverse;
+  }
+
+}
+}

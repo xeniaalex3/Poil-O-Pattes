@@ -1,0 +1,58 @@
+@use 'src/styles/vars';
+
+.profile-button{
+  display: flex;
+  justify-content: center;
+  margin-top: 0;
+
+
+  &-edit{
+    font-family:vars.$global-font;
+    font-style: italic;
+    background-color: #f7f7c5;
+    padding: 0.3rem;
+    border-radius: 0.7rem;
+    font-weight:500;
+    width: 4.5rem;
+    height: 1.5rem;
+    font-size: small;
+    text-align: center;
+  
+  
+  }
+
+  &-delete{
+    font-family: vars.$global-font;
+    font-size: small;
+    text-align: center;
+    font-style: italic;
+    width: 5rem;
+    height: 1.5rem;
+    font-weight:500;
+    color: white;
+    background-color: #ff514e;
+    padding: 0.1rem;
+    border-radius: 1.5rem;
+    border: none;
+    margin-left: 1rem;
+  }
+}
+
+// Media queries Desktop
+@media screen and (min-width: 1024px) {
+
+  .profile-button{
+
+    &-edit{
+      font-size: medium;
+      width: 5rem;
+    }
+
+    &-delete{
+      font-size: medium;
+      width: 6rem;
+    }
+  }
+}
+
+

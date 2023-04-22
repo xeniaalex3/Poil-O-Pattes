@@ -1,0 +1,76 @@
+
+.error {
+
+  &-title{
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 3rem;
+  font-weight: 500;
+  font-family:  'Montserrat', sans-serif;
+
+  }
+
+  &-picture {
+    display: block;
+    position: relative;
+	  width: 90%;
+	  margin: 2rem auto;
+  }
+
+  &-text{
+    font-size: 1.1rem;
+    color: gray;
+    line-height: 1.5rem;
+    text-align: center;
+  }
+
+  &-link{
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #90eda1;
+  filter: drop-shadow(10px 10px 8px rgb(201, 245, 209, 0.9));
+  }
+}
+
+// media queries tablet
+@media screen and (min-width: 481px) and (max-width: 768px)  {
+  .error{
+    &-picture{
+      width: 80%;
+      display: block;
+      margin: auto;
+    }
+  }
+}
+// media queries Small screens
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .error{
+    &-picture{
+      width: 60%;
+      display: block;
+      margin: auto;
+    }
+  }
+}
+// media queries desktop
+@media screen and (min-width: 1025px) {
+  .error{
+    &-picture{
+      width: 48%;
+      display: block;
+      margin: auto;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+

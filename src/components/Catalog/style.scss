@@ -1,0 +1,129 @@
+@use 'src/styles/vars';
+.catalog{
+  margin: 0 auto;
+  text-align: center;
+  //height: 25rem;
+  font-family: vars.$global-font;
+  height: auto;
+  width: 70%;
+  border-top: 8px solid white;
+  font-size: 1.4rem;
+  font-weight: 500;
+  
+    &-title{
+      margin: 1rem auto;
+      padding: 0.5rem;
+      text-align: center;
+      font-size: 1.7rem;
+      font-weight: 400;
+      border-bottom: 2px solid rgb(167, 199, 231);
+      width: 12rem;
+      margin-left: auto;
+      margin-right: auto;
+
+    }
+
+    &-article{
+      width: 100%;
+      margin: 1rem auto;
+      padding: 1rem;
+      text-align: center;
+      background-color:rgb(205, 226, 247);
+      border-radius: 5px;
+    }
+
+    &-content{
+      display: flex;
+      flex-direction: column;
+      
+    }
+
+
+
+      a{
+        font-size: 1.5rem;
+        font-weight:400;
+      }
+      img{
+      width: 40%;
+      height: 30%;
+      position: relative;
+      margin-top: 1rem;
+      border-radius: 500px;
+       -webkit-border-radius: 500px;
+       -moz-border-radius: 500px;
+       border:2.5px solid white;
+  }
+  img:hover, img:focus{
+    animation: img 1s;
+    box-shadow: 0 0 0 1.5em transparent;
+  }
+}
+
+
+
+
+@keyframes img {
+  0% { box-shadow: 0 0 0 0 white }
+}
+
+
+// Media queries Tablet
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+  .catalog{
+  
+        img{
+        width: 10rem;
+
+    }
+    
+  }
+  
+}
+
+// Media queries Desktop
+@media screen and (min-width: 1024px) {
+
+  .catalog{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%; 
+    height: auto;
+    
+
+    &-title{
+      margin: 5rem auto;
+      font-size: 3.5rem;
+      width: 25rem;
+  
+    }
+
+    &-article{
+      width: 30rem;
+      height: auto;
+      margin: 1rem;
+    
+    }
+
+    &-content{
+      display: flex;
+      flex-direction: column-reverse;
+    }
+
+    a {
+      font-size: 2rem;
+      font-weight:400;
+      margin-top: 1rem; 
+    }
+
+    img{
+      width: 10rem;
+      margin-top: 3rem;
+    }
+
+
+  }
+}
+

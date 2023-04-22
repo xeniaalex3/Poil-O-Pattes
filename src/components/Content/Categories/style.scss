@@ -1,0 +1,87 @@
+@use 'src/styles/vars';
+.categories{
+  margin-top: 3rem;
+  
+  &-box{
+    width: 18rem;
+    height: 4rem;
+    margin-bottom: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 19px;
+    background: linear-gradient(90deg,vars.$primary-color, rgb(228, 235, 243) );
+    a{
+      -webkit-dispkay: flex;
+      -moz-display: flex;
+      -ms-display:flex;
+      display: flex;
+      justify-content: center;
+      padding-top: 1.5em;
+      font-size: 1.4rem;  
+      -webkit-position: relative;
+      position: relative;
+      bottom: .6rem;
+      font-weight: 500;
+    }   
+    
+  }
+  &-box:hover, &-box:focus{
+    -webkit-animation: categories-box 1s;
+    animation: categories-box 1s;
+    -webkit-box-shadow: 0 0 0 1em transparent;
+    box-shadow: 0 0 0 1em transparent;
+  }
+ 
+}
+
+@keyframes categories-box {
+  0% { box-shadow: 0 0 0 0 rgb(90, 161, 231) }
+}
+
+// min-width => greater than or equal to 300px
+// max-width => less than or equal to 480px 
+
+
+// media queries tablet 
+@media screen and (min-width: 481px) and (max-width: 768px)  {
+  .categories{
+    &-box{
+      width: 23rem;
+      height: 5rem;
+    }
+    a{
+      position: relative;
+      bottom: .3rem;
+    }
+   }
+
+}
+
+// media queries small screens
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .categories{
+    &-box{
+      width: 26rem;
+      height: 5rem;
+    }
+    a{
+      position: relative;
+      bottom: .3rem;
+    }
+   }
+
+}
+
+// media queries desktop 
+@media screen and (min-width: 1025px) {
+  .categories{
+    &-box{
+      width: 29rem;
+      height: 5rem;
+    }
+    a{
+      position: relative;
+      bottom: .3rem;
+    }
+   }
+}

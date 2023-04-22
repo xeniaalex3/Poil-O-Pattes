@@ -1,0 +1,126 @@
+.spa{
+  margin-top: 1rem;
+
+&-header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-top: 2rem;
+  
+
+}
+
+&-title{
+
+font-size: 1.5rem;
+font-weight: 500;
+color: rgb(135, 182, 244);
+
+}
+&-link-grooming{
+  color:grey;
+  font-style: italic;
+  text-decoration: underline;
+  font-size: 1rem;
+}
+
+&-table{
+
+  border: 1px solid grey;
+  margin: .5rem auto;
+  width: 22rem;
+  height: auto;
+  border-radius: 20px;
+thead{
+  background-color: rgb(187, 213, 247);
+  th{
+    padding: .8rem;
+    
+  }
+}
+tbody{
+  background-color: rgb(237, 242, 248);
+  td{
+    padding: .5rem;
+  }
+
+ 
+}  
+
+}
+
+}
+
+
+
+.price-spa{
+position: relative;
+left: 1.5rem;
+padding: 1rem;
+}
+
+
+// Media queries Tablet
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+.spa{
+
+  &-header{
+
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+
+  &-table{
+    width: 25rem;
+
+  
+  }
+}
+  
+}
+
+
+// Media queries Desktop
+@media screen and (min-width: 1024px) {
+
+.spa{
+
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%; 
+  height: auto;
+
+  &-header{
+
+    margin-top: 7rem;
+    margin-bottom: 2rem;
+    
+
+  }
+
+  &-title{
+
+    font-size: 2rem;
+    
+    }
+
+  &-link-grooming{
+
+    font-size: 1.5rem;
+    }
+
+  &-table{
+    margin-top: 2rem;
+    margin-bottom:5rem;
+    
+    width: 30rem;
+    height: auto;
+  }
+}
+
+
+
+}

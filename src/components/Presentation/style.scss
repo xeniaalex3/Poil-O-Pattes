@@ -1,0 +1,151 @@
+@use 'src/styles/vars';
+.presentation{
+  font-family: vars.$global-font;
+  height: auto;
+  width: 375px;
+  border-top: 3px solid white;
+  margin: 0rem auto;
+
+  
+  h2{
+    margin: 1rem auto;
+    padding: 0.3rem;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 400;
+    border-bottom: 2px solid rgb(167, 199, 231);
+    width: 9rem;
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+
+  &-introduction{
+    margin: 1rem auto;
+    padding: 0.7em;
+    text-align: left;
+     line-height: 1.5;
+    font-size: 0.8rem;
+    font-weight: 400;
+    background-color:rgb(205, 226, 247);
+    border-radius: 5px;
+
+  }
+
+  &-title{
+    margin: 1rem auto;
+    padding: 0.7em;
+    text-align: left;
+    font-size: 0.8rem;
+    font-weight: 400;
+  }
+
+ 
+  &-box{
+    .presentation-article{
+      margin: 1rem auto;
+      padding: 0.7rem;
+      text-align: center;
+      background-color:rgb(205, 226, 247);
+      border-radius: 5px;
+     
+      }
+  
+      a{
+        font-size: 1rem;
+        font-weight: 500;
+      }
+      .presentation-title{
+        margin: 1rem auto;
+        text-align: center;
+        height: 2rem;
+      }
+      img{
+        width: 155px;
+        height: 155px;
+        display: flex;
+        position: relative;
+        left: 6rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        border-radius: 500px;
+       -webkit-border-radius: 500px;
+       -moz-border-radius: 500px;
+       border:2.5px solid white;
+      }
+
+      img:hover, img:focus{
+        animation: img 1s;
+        box-shadow: 0 0 0 1.5em transparent;
+      }
+      
+    }
+    
+    @keyframes img {
+      0% { box-shadow: 0 0 0 0 white }
+    }
+  
+    }
+
+   // media queries tablet 
+@media screen and (min-width: 481px) and (max-width: 768px)  {
+  .presentation{
+    &-introduction{
+      font-size: 0.9rem;
+      padding: 0.8rem;
+    }
+    &-title{
+      font-size: 0.9rem;
+    }
+  }
+  }
+  
+  // media queries Small screens 
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+    .presentation{
+      width: 500px;
+      h2{
+        font-size: 1.6rem;
+      }
+      &-introduction{
+        font-size: 1rem;
+        padding: 1rem;
+      }
+      &-title{
+        font-size: 0.9rem;
+      }
+      &-box{
+        img{
+          display: flex;
+          position: relative;
+          left: 10rem;
+        }
+      }
+    }
+  }
+  
+  // media queries desktop
+  @media screen and (min-width: 1025px) {
+    .presentation{
+      width: 530px;
+      h2{
+        font-size: 1.6rem;
+      }
+      &-introduction{
+        font-size: 1rem;
+        padding: 1rem;
+      }
+      &-title{
+        font-size: 1rem;
+      }
+      &-box{
+        img{
+          display: flex;
+          position: relative;
+          left: 11rem;
+        }
+      }
+    }
+  }
+  
+

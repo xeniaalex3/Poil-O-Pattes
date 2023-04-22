@@ -1,0 +1,288 @@
+@use 'src/styles/vars';
+.register-form{
+  font-family: vars.$global-font;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+
+  &-person{
+    form{
+      width: 20rem;
+      height: 14rem;
+      margin-top: 1.5rem;
+    }
+    h3{
+      text-align: center;
+      margin: 1rem auto;
+      padding:0.3rem;
+      font-size: 1.4rem;
+      font-weight: 400;
+      border-bottom: 2px solid rgb(167, 199, 231);
+      width: 9rem;
+      margin-left: auto;
+      margin-right: auto;
+     }
+    input{
+      width: 100%;
+      margin-bottom: 0.5rem;
+      height: 1.8rem;
+      border-radius: 3px;
+      border: 1px solid vars.$primary-color;
+    }
+  }
+  &-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: .9rem;
+    margin-top: 2rem;
+    font-weight: 500;
+    input{
+      margin-right: .3rem;
+    }
+    
+    
+  }
+  &-animal{
+    form{
+      width: 20rem;
+     height: 12rem;
+     margin-top: 1.6rem;
+     margin-bottom: -.01rem;
+    }
+    h3{
+     text-align: center;
+     margin: 1rem;
+
+     font-size: 1.4rem;
+     font-weight: 400;
+     // color: black;
+     border-bottom: 2px solid rgb(167, 199, 231);
+
+     width: 9rem;
+     margin-left: auto;
+     margin-right: auto;
+    }
+    input{
+      width: 100%;
+      margin-bottom: 1rem;
+      height: 1.8rem;
+      border-radius: 3px;
+      border: 1px solid vars.$primary-color;
+    }
+  }
+  &-hide{
+    display: none;
+    
+  }
+  &-submit{
+    display: flex;
+    justify-content: center;
+    height: 2rem;
+    margin-top: 2rem;
+    
+  
+    button{
+      width: 7rem;
+      border: 1px solid rgb(167, 199, 231);
+      background-color: rgb(167, 199, 231);
+
+      border-radius: 5px;
+      font-size: 1rem;
+      height: 2rem;
+      
+    }
+  }
+  &-check{
+    color: #fb7819;
+    font-size: 0.7rem;
+  }
+&-control {
+  display: flex;
+  flex-direction: row;
+}
+  &-star {
+    color: #fb7819;
+    font-size: 1.3rem;
+    height:0.12rem;
+    margin-bottom: 0.56rem;
+   
+  }
+  &-obligatory {
+    font-size: 0.75rem;
+    color: #fb7819;
+
+  }
+}
+
+.validate-popup {
+  text-align: center;
+  position:fixed;
+  margin: auto 1rem 1rem ;
+  z-index:9;
+  top: 25%;
+  background-color: white;
+  box-shadow: 0 0 15px #c9f5d1;
+  border: 1px solid #c9f5d1;
+  border-radius: 5px;
+  padding: 3rem;
+  width: 345px;
+  height: 15rem;
+  display: block;
+  animation: 0.5s 0s 1 pop;
+
+
+&-title {
+  font-weight: 400;
+  color: #90eda1;
+  font-size: 1.5rem;
+  border-bottom: 2px solid #c9f5d1;
+  margin-bottom: 1rem;
+}
+
+&-text{
+  font-size: 1rem;
+  color: grey;
+  line-height: 1.2rem;
+}
+
+&-login{
+  display: flex;
+  margin-top: 1.5rem;
+  justify-content: center;
+  font-size: 1.3rem;
+  font-weight: 400;
+  font-style:oblique;
+  text-align: center;
+  color: #90eda1;
+  filter: drop-shadow(10px 10px 8px rgb(201, 245, 209, 0.9));
+  
+}
+
+
+&-hide {
+  display: none;
+}
+
+
+@keyframes pop {
+0% {
+  transform: scale(.5);
+  opacity: 0;
+}
+100% {
+  transform: scale(1);
+  opacity: 1;
+}
+}
+}
+
+// Media queries Tablet
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+.register-form {
+
+  &-person{
+    form{
+      width: 25rem;
+      margin-top: 2.5rem;
+    }
+    h3{
+      width: 10rem;
+      font-size: 1.8rem;
+    }
+    input{
+      height: 2rem;
+    }
+  }
+
+  &-box{
+    margin-top: 3rem;
+    font-size: 1rem;
+
+  }
+
+  &-animal{
+    form{
+      width: 25rem;
+      
+    }
+    h3{
+     font-size: 1.8rem;
+     width: 12rem;
+     margin-top: 2rem;
+    }
+    input{
+      height: 2rem;
+    }
+  }
+
+  &-submit{
+
+    button{
+      width: 8.5rem;
+      height: 2.2rem;
+      font-size: 1.2rem;
+    }
+  }
+}
+}
+
+     // Media queries Desktop
+     @media screen and (min-width: 1024px) {
+      .register-form {
+        margin-top: 3.5em;
+        &-person{
+          form{
+            width: 30rem;
+            margin-top: 2.5rem;
+          }
+          h3{
+            width: 15rem;
+            font-size: 2rem;
+          }
+          input{
+            height: 3rem;
+          }
+        }
+      
+        &-box{
+          margin-top: 8rem;
+          font-size: 1.3rem;
+      
+        }
+      
+        &-animal{
+          form{
+            width: 30rem;
+          }
+          h3{
+           font-size: 2rem;
+           width: 15rem;
+           margin-top: 2.5rem;
+          }
+          input{
+            height: 3rem;
+          }
+        }
+      
+        &-submit{
+    
+          button{
+<<<<<<< HEAD
+            width: 10rem;
+            height: 2.5rem;
+            font-size: 1.3rem;
+            margin-top: 2rem;
+            margin-bottom: 1.5rem;
+=======
+            width: 14rem;
+            height: 2rem;
+   
+>>>>>>> 6cbd97bf02ce7e4f08d30c8fd98cf9fc0f24d7d8
+          }
+        }
+      }
+
+     }

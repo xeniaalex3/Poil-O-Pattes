@@ -1,0 +1,31 @@
+.profile-informations{
+ span{
+  font-size: 1rem;
+  font-weight: 500;
+ }
+}
+
+#edit {
+  background-color: #f7f7c5;
+}
+
+// Media queries Tablet
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+  .profile-informations{
+
+    span{
+      font-size: 1.2rem;
+    }
+  }
+}
+
+// Media queries Desktop
+@media screen and (min-width: 1024px) {
+
+  .profile-informations{
+    span{
+      font-size: 1.3rem;
+    }
+  }
+}

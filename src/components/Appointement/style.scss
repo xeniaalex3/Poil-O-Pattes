@@ -1,0 +1,180 @@
+@use 'src/styles/vars';
+.calendar{
+  //margin: 2rem auto;
+  font-family: vars.$global-font;
+  z-index: 0;
+  width: 375px;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  
+  &-title{
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 400;
+    border-bottom: 2px solid vars.$primary-color;
+    width: 17rem;
+    margin-left: 2.7rem;
+  }
+  &-box{
+    margin-bottom: 1.5rem;
+    margin-top: 1rem; 
+  }
+  // form scss 
+  .login-form-elements{
+    border: none;
+    border-radius: 5px;
+    width: 374px;
+    background-color: rgb(167, 199, 231, 0.3);
+    
+  }
+  .label-date{
+    margin: 1rem auto;
+    font-family: vars.$global-font;
+    font-size: 1.1rem;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    text-decoration: underline rgb(167, 199, 231);
+  }
+  .label-time{
+    display: flex;
+    justify-content: center;
+    margin: 1rem auto;
+    font-family: vars.$global-font;
+    font-size: 1.1rem;
+    font-weight: 400;
+    text-decoration: underline rgb(167, 199, 231);
+    
+  }
+  .input-calendar{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+ 
+  .button-submits{
+    width: 9rem;
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.validate-popup {
+  text-align: center;
+  position:fixed;
+  margin: auto 1rem 1rem ;
+  z-index:9;
+  top: 25%;
+  background-color: white;
+  box-shadow: 0 0 15px #c9f5d1;
+  border: 1px solid #c9f5d1;
+  border-radius: 5px;
+  padding: 3rem;
+  width: 345px;
+  height: 15rem;
+  display: block;
+  animation: 0.5s 0s 1 pop;
+
+
+&-title {
+  font-weight: 400;
+  color: #90eda1;
+  font-size: 1.5rem;
+  border-bottom: 2px solid #c9f5d1;
+  margin-bottom: 1rem;
+}
+
+&-text{
+  font-size: 1rem;
+  color: grey;
+  line-height: 1.2rem;
+}
+
+&-profile{
+  display: flex;
+  margin-top: 1.5rem;
+  justify-content: center;
+  font-size: 1.3rem;
+  font-weight: 400;
+  font-style:oblique;
+  text-align: center;
+  color: #90eda1;
+  filter: drop-shadow(10px 10px 8px rgb(201, 245, 209, 0.9));
+  
+}
+
+&-home{
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1.3rem;
+  color: #a7c7e7;
+  text-decoration: underline;
+}
+
+&-hide {
+  display: none;
+}
+
+@keyframes pop {
+  0% {
+    transform: scale(.5);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  }
+  }
+  
+
+// media queries tablet 
+@media screen and (min-width: 481px) and (max-width: 768px)  {
+  .calendar{
+    &-title{
+      margin: 1rem auto;
+    }
+    .button-submits{
+      margin-top: 3rem;
+      margin-bottom: 1.5rem;
+    }
+  }
+  }
+  
+  // media queries Small screens 
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+  .calendar{
+    &-title{
+      margin: 1rem auto;
+    }
+    .login-form-elements{
+      height: 58vh;
+    }
+    .button-submits{
+     margin-top: 3.5rem;
+      height: 1.5rem;
+    }
+  }
+  }
+  
+  // media queries desktop
+  @media screen and (min-width: 1025px) {
+  .calendar{
+    &-title{
+      margin: 1rem auto;
+    }
+    .login-form-elements{
+      height: 60vh;
+    }
+    .button-submits{
+      margin-top: 3.5rem;
+      height: 1.6rem;
+    }
+  }
+  }
+  
+
