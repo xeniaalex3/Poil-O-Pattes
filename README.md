@@ -6,7 +6,7 @@
 link: https://poilsopattes.raffiskender.com/
 
 <p align="center">
-<img width='80%' height='80%' src="./assets/img/layout.png" alt="project poil-o-pattes"/></p>
+<img width='80%' height='80%' src="./src/assets/images/poilsopattes.raffiskender.com_.png" alt="project poil-o-pattes"/></p>
 
 ## Stack and tools
 * [React](https://reactjs.org/)
