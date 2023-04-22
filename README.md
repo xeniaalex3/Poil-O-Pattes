@@ -1,7 +1,8 @@
 # Poil-O-Pattes
 
 ## Description
-
+Poil O'Pattes is a website for a grooming salon dedicated to animals, especially dogs.
+The application is designed to be intuitive and clear, with all features easily accessible
 
 link: https://poilsopattes.raffiskender.com/
 
